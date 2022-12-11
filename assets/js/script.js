@@ -57,6 +57,6 @@ $(document).ready(function () {
         })
     }
     hourTracker();
-})32
+})
 
 
