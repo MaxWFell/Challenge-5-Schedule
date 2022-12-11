@@ -18,4 +18,18 @@ $(document).ready(function () {
         window.alert('Your task has been saved!');
         console.log('The button has been clicked!');
     })
-        //We need to load the data from each storage to display it correctly
+        //loading data properly so it displays
+        $("#hour7 .task").val(localStorage.getItem("hour7"));
+    $("#hour8 .task").val(localStorage.getItem("hour8"));
+    $("#hour9 .task").val(localStorage.getItem("hour9"));
+    $("#hour10 .task").val(localStorage.getItem("hour10"));
+    $("#hour11 .task").val(localStorage.getItem("hour11"));
+    $("#hour12 .task").val(localStorage.getItem("hour12"));
+    $("#hour13 .task").val(localStorage.getItem("hour13"));
+    $("#hour14 .task").val(localStorage.getItem("hour14"));
+    $("#hour15 .task").val(localStorage.getItem("hour15"));
+    $("#hour16 .task").val(localStorage.getItem("hour16"));
+    $("#hour17 .task").val(localStorage.getItem("hour17"));
+    $("#hour18 .task").val(localStorage.getItem("hour18"));
+    $("#hour19 .task").val(localStorage.getItem("hour19"));
+
