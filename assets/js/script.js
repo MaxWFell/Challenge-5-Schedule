@@ -33,3 +33,30 @@ $(document).ready(function () {
     $("#hour18 .task").val(localStorage.getItem("hour18"));
     $("#hour19 .task").val(localStorage.getItem("hour19"));
 
+    function hourTracker() {
+        var currentHour = moment().hour();
+
+        $(".time-block").each(function () {
+            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+
+            if (blockHour < currentHour) {
+                $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+            }
+            else if (blockHour === currentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+                $(this).removeClass("future");
+            }
+            else {
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
+        })
+    }
+    hourTracker();
+})32
+
+
